@@ -1,4 +1,6 @@
-const clientId = process.env.SPOTIFY_CLIENT_ID;
+import dotenv from 'dotenv';
+dotenv.config();
+
 const params = new URLSearchParams(window.location.search);
 const code = params.get("code");
 
